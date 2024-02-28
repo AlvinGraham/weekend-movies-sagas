@@ -8,10 +8,6 @@ function MovieList() {
   const history = useHistory();
   const movies = useSelector((store) => store.movies);
 
-  const imgClk = (id) => {
-    history.push(`/details/${movie.id}`);
-  };
-
   useEffect(() => {
     dispatch({ type: 'FETCH_MOVIES' });
   }, []);
