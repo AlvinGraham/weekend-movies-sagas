@@ -25,7 +25,7 @@ function MovieList() {
               <img
                 src={movie.poster}
                 alt={movie.title}
-                data-testid="movieDetails"
+                data-testid="toDetails"
                 onClick={() => {
                   history.push(`/details/${movie.id}`);
                 }}
