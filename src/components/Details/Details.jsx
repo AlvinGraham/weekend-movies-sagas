@@ -52,7 +52,7 @@ export default function Details() {
         alt={currentMovie.title}
       />
       <p>{currentMovie.description}</p>
-      <h3>GENRES:</h3>
+      <h3>GENRES</h3>
       <ul>
         {currentGenres.map((genre) => {
           return <li key={genre.id}>{genre.name}</li>;

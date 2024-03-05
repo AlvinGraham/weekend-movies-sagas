@@ -21,6 +21,7 @@ function MovieList() {
           return (
             <div
               data-testid="movieItem"
+              className="movie-card"
               key={movie.id}>
               <h3>{movie.title}</h3>
               <img

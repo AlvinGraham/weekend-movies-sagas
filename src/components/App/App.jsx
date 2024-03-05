@@ -6,7 +6,7 @@ import Details from '../Details/Details';
 function App() {
   return (
     <div className="App">
-      <h1>Movies for Nerds who Love Movies!</h1>
+      <h1 className="header">Movies for Nerds who Love Movies!</h1>
       <Router>
         <Route
           path="/"

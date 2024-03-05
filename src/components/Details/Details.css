@@ -1,0 +1,24 @@
+.details-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-div img {
+  width: 25%;
+  border: 1px solid gold;
+}
+
+.details-div li {
+  width: fit-content;
+}
+
+.details-div ul {
+  margin-top: 0px;
+  padding: 0;
+}
+
+.details-div h3 {
+  margin: 5px;
+  padding: 0;
+}
