@@ -7,7 +7,6 @@ import axios from 'axios';
 // Create the rootSaga generator function
 function* rootSaga() {
   yield takeEvery('FETCH_MOVIES', fetchAllMovies);
-  yield takeEvery('FETCH_CURRENT_MOVIE', fetchSingleMovie);
   yield takeEvery('FETCH_GENRES', fetchGenres);
 }
 
@@ -39,15 +38,6 @@ function* fetchGenres() {
   }
 }
 
-function* fetchSingleMovie() {
-  // Get a single movie for the details page
-  try {
-    // const
-  } catch (err) {
-    console.error('ERROR in fetchSingleMovie saga:', err);
-  }
-}
-
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
@@ -69,6 +59,10 @@ const genres = (state = [], action) => {
     default:
       return state;
   }
+};
+
+const currentMovie = (state = { movie: {}, genres: [] }, action) => {
+  return state;
 };
 
 // Create one store that all components can use
