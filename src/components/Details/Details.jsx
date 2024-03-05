@@ -46,9 +46,18 @@ export default function Details() {
     <div
       className="details-div"
       data-testid="movieDetails">
-      <h1>I am the Details Page Div: {pageID}</h1>
-      <h2>Result {JSON.stringify(currentMovie)}</h2>
-      <h3>Genres {JSON.stringify(currentGenres)}</h3>
+      <h1>{currentMovie.title}</h1>
+      <img
+        src={currentMovie.poster}
+        alt={currentMovie.title}
+      />
+      <p>{currentMovie.description}</p>
+      <h3>GENRES:</h3>
+      <ul>
+        {currentGenres.map((genre) => {
+          return <li key={genre.id}>{genre.name}</li>;
+        })}
+      </ul>
       <button
         type="button"
         data-testid="toList"
